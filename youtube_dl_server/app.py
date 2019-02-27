@@ -55,7 +55,7 @@ api = Blueprint('api', __name__)
 
 
 def route_api(subpath, *args, **kargs):
-    return api.route('/api/' + subpath, *args, **kargs)
+    return api.route(subpath, *args, **kargs)
 
 
 def set_access_control(f):
